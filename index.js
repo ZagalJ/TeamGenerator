@@ -41,7 +41,7 @@ const addManager = () =>{
         const {name, id, email, officeNumber} = managerInput;
         const manager = new Manager (name, id, email, officeNumber);
         teamArray.push(manager);
-        console.log(manager);
+        // console.log(manager);
     })
 }
 
@@ -91,11 +91,11 @@ const addEmployee = () => {
 
         if (role === "Engineer"){
             employee = new Engineer (name, id, email, github);
-            console.log(employee);
+            // console.log(employee);
         }
         else if (role === "Intern"){
             employee = new Intern (name, id, email, school);
-            console.log(employee);
+            // console.log(employee);
         }
         teamArray.push(employee);
 
@@ -112,7 +112,7 @@ const writeFile = data => {
     fs.writeFile('dist/index.html', data, err => {
         if (err) { 
             console.log(err);
-            return;
+            // return;
         } else {
             console.log("Profile succesfully created")
         }

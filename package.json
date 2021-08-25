@@ -1,0 +1,32 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "app to generate team profile",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "inquirer": "^8.1.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZagalJ/TeamGenerator.git"
+  },
+  "keywords": [
+    "jest",
+    "inquirer"
+  ],
+  "author": "Jonathan Zagal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZagalJ/TeamGenerator/issues"
+  },
+  "homepage": "https://github.com/ZagalJ/TeamGenerator#readme"
+}
