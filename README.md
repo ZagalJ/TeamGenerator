@@ -31,7 +31,8 @@ node index.js
 ```
 
 You can also watch me demo the app by clicking this [link](https://drive.google.com/file/d/15DlBoFFD0hmgt7QWPhZAPHPOTLotyGqG/view?usp=sharing) 
-![screenshot] <img src="./media/sc.png">
+
+<img src="./media/sc.png">
 
 ## License 
 This project is licensed under MIT
