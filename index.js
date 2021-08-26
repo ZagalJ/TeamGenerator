@@ -41,7 +41,7 @@ const addManager = () =>{
         const {name, id, email, officeNumber} = managerInput;
         const manager = new Manager (name, id, email, officeNumber);
         teamArray.push(manager);
-        // console.log(manager);
+        console.log(manager);
     })
 }
 
@@ -71,12 +71,14 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: `Please enter the employee's github username.`
+            message: `Please enter the employee's github username.`,
+            when: (input) => input.role === "Engineer",
         },
         {
             type: 'input',
             name: 'school',
             message: `Please enter the intern's school.`,
+            when: (input) => input.role === "Intern",
         },
         {
             type: 'confirm',
@@ -91,11 +93,11 @@ const addEmployee = () => {
 
         if (role === "Engineer"){
             employee = new Engineer (name, id, email, github);
-            // console.log(employee);
+            console.log(employee);
         }
         else if (role === "Intern"){
             employee = new Intern (name, id, email, school);
-            // console.log(employee);
+            console.log(employee);
         }
         teamArray.push(employee);
 
@@ -112,7 +114,7 @@ const writeFile = data => {
     fs.writeFile('dist/index.html', data, err => {
         if (err) { 
             console.log(err);
-            // return;
+            return;
         } else {
             console.log("Profile succesfully created. Please open index.html")
         }
