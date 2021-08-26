@@ -114,7 +114,7 @@ const writeFile = data => {
             console.log(err);
             // return;
         } else {
-            console.log("Profile succesfully created")
+            console.log("Profile succesfully created. Please open index.html")
         }
     })
 }
@@ -130,6 +130,3 @@ addManager()
     .catch(err => {
         console.log(err);
     });
-// mailto section
-
-// 
